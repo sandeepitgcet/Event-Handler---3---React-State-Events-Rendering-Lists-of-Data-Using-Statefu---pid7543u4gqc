@@ -5,13 +5,13 @@ const App = () => {
   const [numInput, setNumInput] = useState('');
   const handleInput = (event) =>{
    // use console.log
-   console.log(event.target.value);
+   console.log("Input in #text-input is "+event.target.value);
    setInputValue(event.target.value);
    
   }
 
   const handleNumInput = (event) => {
-    console.log(event.target.value);
+    console.log("Input in #num-input is "+event.target.value);
     setNumInput(event.target.value);
   }
 
@@ -25,7 +25,7 @@ const App = () => {
       <br/>
 
       <label htmlFor='num-input'>Number input</label>
-      <input id="num-input"  type={'number'} onChange={handleNumInput} value={"Input in #num-input is "+numInput}/>
+      <input id="num-input"  type={'number'} onChange={handleNumInput} value={"numInput"}/>
       <br/>
     </div>
   )
