@@ -19,13 +19,13 @@ const App = () => {
   return (
     <div id="main">
       <label htmlFor='text-input'>Text Input:- </label>
-      <input id="text-input" type={'text'} onChange={handleInput} value={inputValue}/>
+      <input id="text-input" type={'text'} onChange={handleInput} value={"Input in #text-input is "+inputValue}/>
 
       <br/>
       <br/>
 
       <label htmlFor='num-input'>Number input</label>
-      <input id="num-input"  type={'number'} onChange={handleNumInput} value={numInput}/>
+      <input id="num-input"  type={'number'} onChange={handleNumInput} value={"Input in #num-input is "+numInput}/>
       <br/>
     </div>
   )
